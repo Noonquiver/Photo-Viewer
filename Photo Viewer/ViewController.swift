@@ -48,11 +48,9 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
-        
-        if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            imagePicker.sourceType = .camera
-        }
-        
+        //if UIImagePickerController.isSourceTypeAvailable(.camera) {
+        imagePicker.sourceType = .camera
+        //}
         present(imagePicker, animated: true)
     }
     
